@@ -1,0 +1,22 @@
+{
+  "name": "strider-docker-gitane-camo",
+  "version": "0.0.1",
+  "description": "Imitates gitane, but executes the commands in strider-docker-slave",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriz2600/strider-docker-gitane-camo.git"
+  },
+  "author": "chriz2600",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriz2600/strider-docker-gitane-camo/issues"
+  },
+  "homepage": "https://github.com/chriz2600/strider-docker-gitane-camo",
+  "dependencies": {
+    "step": "0.0.6"
+  }
+}
