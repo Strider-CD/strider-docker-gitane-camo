@@ -14,10 +14,10 @@ function getErrorFromExitCode(exitCode) {
 function writeFiles(privKey, keyMode, cb, contextCmd) {
   return Step(
     function () {
-      contextCmd({command: 'write-to-file', args: [privKey, KEYFILE]}, this);
+      contextCmd({command: 'write-to-file', args: [privKey, KEYFILE], screen: `Dropping SSH key at '${KEYFILE}'...`}, this);
     },
     function () {
-      contextCmd({command: 'chmod', args: [keyMode, KEYFILE]}, this);
+      contextCmd({command: 'chmod', args: [keyMode, KEYFILE] }, this);
     },
     function (exitCode) {
       cb(getErrorFromExitCode(exitCode));
